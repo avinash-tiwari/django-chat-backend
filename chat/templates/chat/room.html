@@ -12,6 +12,7 @@
 <script>
     var roomName = "{{ room_name|escapejs }}";
 
+    // Corresponds to ---> ws://<base-url>/ws/chat/<room-name>/
     var chatSocket = new WebSocket(
         'ws://' + window.location.host +
         '/ws/chat/' + roomName + '/');
